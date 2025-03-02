@@ -28,7 +28,7 @@ Or custom domains showing the message body “**Sign up for Framer to publish yo
 
 **Steps to Perform a Subdomain Takeover:**
 
-1.  **Sign Up for Framer:** Visit [login.framer.com](http://login.framer.com) and create an account.
+1.  **Sign Up for Framer:** Visit [login.framer.com](https://login.framer.com) and create an account.
 2.  **Create a Page:** After completing your signup, you will be directed to the Framer project dashboard, Click on the “Page” feature in the dashboard. You can select any page, whether it’s an existing one or a new one.
 3.  **Publish the Page:** In the top-right corner, click on “Publish.” This will allow you to set up the publishing options for your page.
 4.  **Add a Custom Domain:** After clicking “Publish,” you’ll see an option to “Add Domain.” Here, you can enter the vulnerable domain that you identified (either a free subdomain under `framer.website` or a custom domain).
