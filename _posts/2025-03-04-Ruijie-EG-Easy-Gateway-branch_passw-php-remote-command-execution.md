@@ -152,7 +152,7 @@ Visit again
 
 
 ```plain
-http://xxx.xxx.xxx.xxx/test_test.txt
+https://xxx.xxx.xxx.xxx/test_test.txt
 ```
 
 

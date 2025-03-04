@@ -23,7 +23,7 @@ The login page is as follows
 The file server management login page exists in the application
 
 ```plain
-http://xxx.xxx.xxx.xxx/fs/
+https://xxx.xxx.xxx.xxx/fs/
 ```
 
 

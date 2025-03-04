@@ -33,15 +33,15 @@ The vulnerability file is image_upload.php of the CK editor
 define ( 'ROOT_PATH', '../../../../' );  // back to your root path
 
 $arrType = array (
-		'http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/jpg',
-		'http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/gif',
-		'http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/png',
-		'http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/bmp',
-		'http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/pjpeg',
-		'http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/jpeg' 
+		'https://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/jpg',
+		'https://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/gif',
+		'https://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/png',
+		'https://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/bmp',
+		'https://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/pjpeg',
+		'https://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/jpeg' 
 );
 $max_size = 500 * 1024; // 最大文件限制（单位：byte）
-$upfile = ROOT_PATH.'http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/uploads'; // 图片目录路径
+$upfile = ROOT_PATH.'https://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/uploads'; // 图片目录路径
 if (!isset($_FILES ['files'])){
 	echo '{"result":"400","msg":"未能找到图片，请确认图片是否过大"}';
 	exit ();
@@ -80,7 +80,7 @@ if ($_SERVER ['REQUEST_METHOD'] == 'POST') { // 判断提交方式是否为POST
 		echo '{"result":"400","msg":"从:'.$file ['tmp_name'].'移动图片到:'.$picName.'出错"}';
 		exit ();
 	} else {
-		echo '{"result":"200","imgurl":"http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/uploads/' . $returnName . '"}';
+		echo '{"result":"200","imgurl":"https://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/uploads/' . $returnName . '"}';
 	}
 }
 
@@ -118,7 +118,7 @@ Access the returned file path
 
 
 ```plain
-/Common/http://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/uploads/xxxxx.php
+/Common/https://peiqi-wiki-poc.oss-cn-beijing.aliyuncs.com/vuln/uploads/xxxxx.php
 ```
 
 

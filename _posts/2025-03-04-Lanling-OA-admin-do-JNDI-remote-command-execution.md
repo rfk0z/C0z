@@ -46,7 +46,7 @@ After obtaining password, use the DES method to decrypt it. The default key is `
 Access the background address and log in with a decrypted password
 
 ```plain
-http://xxx.xxx.xxx.xxx/admin.do
+https://xxx.xxx.xxx.xxx/admin.do
 ```
 
 ![img](https://raw.githubusercontent.com/PeiQi0/PeiQi-WIKI-Book/refs/heads/main/docs/.vuepress/../.vuepress/public/img/lanling-6.png)

@@ -19,5 +19,5 @@ You can use the username to blast the user password to enter the background for 
 Visit the following URL to reveal user information
 
 ```plain
-http://xxx.xxx.xxx.xxx/yyoa/assess/js/initDataAssess.jsp
+https://xxx.xxx.xxx.xxx/yyoa/assess/js/initDataAssess.jsp
 ```

